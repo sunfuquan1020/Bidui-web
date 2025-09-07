@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 比兑智能科技</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/bidui-logo.png" alt="比兑智能科技" style="height: 50px;">
+                <h1 data-zh="比兑智能科技（上海）有限公司" data-en="Bidui Intelligent Technology Shanghai Co., Ltd.">比兑智能科技（上海）有限公司</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" data-zh="首页" data-en="Home">首页</a></li>
+                    <li><a href="products.html" data-zh="产品服务" data-en="Products">产品服务</a></li>
+                    <li><a href="applications.html" data-zh="应用领域" data-en="Applications">应用领域</a></li>
+                    <li><a href="news.html" data-zh="新闻动态" data-en="News">新闻动态</a></li>
+                    <li><a href="about.html" data-zh="关于我们" data-en="About">关于我们</a></li>
+                    <li><a href="contact.html" class="active" data-zh="联系我们" data-en="Contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-toggle">
+                <button id="lang-toggle" data-lang="zh">EN</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <h1 data-zh="联系我们" data-en="Contact Us">联系我们</h1>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3 data-zh="电话咨询" data-en="Phone Consultation">电话咨询</h3>
+                            <p data-zh="+86 135-2430-9462" data-en="+86 135-2430-9462">+86 135-2430-9462</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3 data-zh="邮件咨询" data-en="Email Consultation">邮件咨询</h3>
+                            <p data-zh="infor@bidui.com" data-en="infor@bidui.com">infor@bidui.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3 data-zh="公司地址" data-en="Company Address">公司地址</h3>
+                            <p data-zh="上海市浦东新区拱秀路1026弄" data-en="No. 1026 Gongxiu Road, Pudong New Area, Shanghai">上海市浦东新区拱秀路1026弄</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-details">
+                            <h3 data-zh="工作时间" data-en="Business Hours">工作时间</h3>
+                            <p data-zh="周一至周五：9:00-18:00" data-en="Monday to Friday: 9:00-18:00">周一至周五：9:00-18:00</p>
+                            <p data-zh="周六、周日：技术支持热线" data-en="Saturday, Sunday: Technical Support Hotline">周六、周日：技术支持热线</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2 data-zh="发送咨询" data-en="Send Inquiry">发送咨询</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-zh="姓名" data-en="Name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-zh="邮箱" data-en="Email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-zh="电话" data-en="Phone">电话</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" data-zh="公司名称" data-en="Company Name">公司名称</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" data-zh="咨询主题" data-en="Subject">咨询主题</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" data-zh="请选择主题" data-en="Select Subject">请选择主题</option>
+                                <option value="product" data-zh="产品咨询" data-en="Product Inquiry">产品咨询</option>
+                                <option value="technical" data-zh="技术支持" data-en="Technical Support">技术支持</option>
+                                <option value="partnership" data-zh="合作洽谈" data-en="Partnership">合作洽谈</option>
+                                <option value="other" data-zh="其他" data-en="Other">其他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-zh="咨询内容" data-en="Message">咨询内容</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" data-zh="提交咨询" data-en="Submit Inquiry">提交咨询</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2 data-zh="公司位置" data-en="Company Location">公司位置</h2>
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p data-zh="上海市浦东新区拱秀路1026弄" data-en="No. 1026 Gongxiu Road, Pudong New Area, Shanghai">上海市浦东新区拱秀路1026弄</p>
+                    <p data-zh="点击查看详细地图" data-en="Click to view detailed map">点击查看详细地图</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-zh="联系我们" data-en="Contact Us">联系我们</h3>
+                    <p><i class="fas fa-phone"></i> <span data-zh="电话咨询：+86 135-2430-9462" data-en="Phone: +86 135-2430-9462">电话咨询：+86 135-2430-9462</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-zh="邮件咨询：infor@bidui.com" data-en="Email: infor@bidui.com">邮件咨询：infor@bidui.com</span></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-zh="公司地址：上海市浦东新区拱秀路1026弄" data-en="Address: No. 1026 Gongxiu Road, Pudong New Area, Shanghai">公司地址：上海市浦东新区拱秀路1026弄</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-zh="快速链接" data-en="Quick Links">快速链接</h3>
+                    <ul>
+                        <li><a href="index.html" data-zh="首页" data-en="Home">首页</a></li>
+                        <li><a href="products.html" data-zh="产品服务" data-en="Products">产品服务</a></li>
+                        <li><a href="applications.html" data-zh="应用领域" data-en="Applications">应用领域</a></li>
+                        <li><a href="about.html" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-zh="© 2024 比兑智能科技（上海）有限公司 版权所有" data-en="© 2024 Bidui Intelligent Technology (Shanghai) Co., Ltd. All rights reserved">© 2024 比兑智能科技（上海）有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
