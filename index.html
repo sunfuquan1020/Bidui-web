@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>比对科技 - 专业流体监控解决方案</title>
+    <title>比兑智能科技 - 专业流体监控解决方案</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     <nav class="main-nav">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="images/bidui-logo.png" alt="比对科技" class="logo-img">
+                <img src="images/bidui-logo.png" alt="比兑科技" class="logo-img">
             </a>
             <div class="nav-toggle">
                 <span></span>
@@ -41,14 +41,21 @@
         <img src="images/data center.png" alt="数据中心背景" class="hero-bg">
         <div class="container hero-content">
             <div class="hero-text" data-aos="fade-up">
-                <h1>随时把控，尽显专业</h1>
-                <p>汽车养护的AI智能体，流体品质在线监控专家</p>
+                <span class="hero-eyebrow">液冷冷却液健康监测</span>
+                <h1>读懂每一滴冷却液</h1>
+                <p>液冷数据中心冷却液健康监测专家 —— 从感知，到预测，到守护</p>
                 <div class="hero-buttons">
                     <a href="#products" class="btn btn-primary">了解更多</a>
                     <a href="#contact" class="btn btn-outline">联系我们</a>
                 </div>
+                <div class="hero-pills">
+                    <span class="pill"><i class="fas fa-microchip"></i><span class="pill-text">MEMS 多参数在线监测</span></span>
+                    <span class="pill"><i class="fas fa-brain"></i><span class="pill-text">AI 数字孪生预测</span></span>
+                    <span class="pill"><i class="fas fa-bolt"></i><span class="pill-text">提前 7-30 天预警</span></span>
+                </div>
             </div>
         </div>
+        <a href="#products" class="hero-scroll" aria-label="向下滚动"><i class="fas fa-chevron-down"></i></a>
     </header>
 
     <!-- 产品服务区域 -->
@@ -57,27 +64,57 @@
             <h2 class="section-title" data-aos="fade-up">产品服务</h2>
             <div class="product-grid">
                 <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/cellphone.png" alt="汽车养护智能体" class="product-image">
+                    <img src="images/portable-analyzer.svg" alt="便携式冷却液检测仪" class="product-image">
                     <div class="product-content">
-                        <h3>汽车养护智能体</h3>
-                        <p>汽车故障诊断和养护AI智能专家，识别汽车VIN码给出品牌汽车配置，通过故障招聘或描述，可配合内窥镜，油品品质在线传感器，和OBD故障码数据解读，识别故障原因，反馈维修建议，同时也可以给出车主汽车使用养护建议。</p>
+                        <h3>便携式冷却液检测仪</h3>
+                        <p>面向现场的手持检测设备，15分钟完成 pH、电导率/电阻率、浊度、铜离子和 ISO 4406 清洁度等全参数检测，自动生成冷却液健康评分与异常原因建议，为交付验收、巡检和应急抢修建立统一的现场检测标准与数据入口。</p>
                         <a href="#" class="learn-more">了解更多 <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/oil-sensors.png" alt="流体品质在线监控" class="product-image">
+                    <img src="images/mems-sensor.svg" alt="MEMS在线传感器" class="product-image">
                     <div class="product-content">
-                        <h3>流体品质在线监控</h3>
-                        <p>专利开发的油品品质在线监控传感器，可以加装汽车后市场，也可以用于汽车发动机，变速箱，油冷电机润滑油，和充电桩，储能，液冷数据中心冷却流体工质特性指标在线监控，确保设备运行安全。</p>
+                        <h3>MEMS 在线传感器</h3>
+                        <p>微型化、低功耗、可阵列化的 MEMS 多参数传感器，可嵌入 CDU、支路、冷板前后等关键节点，融合电导率/电阻率、pH、温度、浊度等指标。点位密度带来数据质量，数据质量带来预测能力，让冷却液监测成为系统的"神经末梢"。</p>
                         <a href="#" class="learn-more">了解更多 <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="images/particle.png" alt="油液清洁度验证" class="product-image">
+                    <img src="images/digital-twin.svg" alt="数字孪生与AI预测平台" class="product-image">
                     <div class="product-content">
-                        <h3>油液清洁度验证材料</h3>
-                        <p>调配0-100um污染颗粒物，用于变速箱，驱动电机等液压系统及零部件抗污染耐久可靠性验证测试，添加到油液中，达到ISO 4406 清洁度要求，可以替代 FTI SYnform污染物，模拟油液长期使用后被污染情况。</p>
+                        <h3>数字孪生与 AI 预测平台</h3>
+                        <p>实时采集多源监测数据，构建冷却液系统数字孪生模型，通过 AI 趋势与异常识别提前 7-30 天预警指标越界、定位污染来源，并自动输出过滤、冲洗、补液、换液等预防性维护工单，把"事后维修"升级为"事前预测"。</p>
                         <a href="#" class="learn-more">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/rescue-cart.svg" alt="运维应急小车" class="product-image">
+                    <div class="product-content">
+                        <h3>运维应急小车</h3>
+                        <p>面向数据中心高可用场景的现场液冷急救解决方案，集成泄漏收集与废液封存、不停机过滤/净化/补液、便携检测与 AI 辅助决策、远程专家连线于一体，配合年度维保包与按次应急服务，补齐预警到抢修之间的响应空白。</p>
+                        <a href="#" class="learn-more">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 其他业务子栏目 -->
+            <div class="other-business" data-aos="fade-up">
+                <h3 class="other-title">其他业务</h3>
+                <p class="other-subtitle">基于油液监测与可靠性验证的技术积累，我们同时提供以下能力</p>
+                <div class="other-grid">
+                    <div class="other-card">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <h4>汽车故障诊断及养护 AI 专家系统</h4>
+                            <p>识别汽车 VIN 码给出品牌配置，结合故障图片识别、内窥镜、OBD 故障码与油品在线监测数据，定位故障原因，提供专业维修与定制养护建议。</p>
+                        </div>
+                    </div>
+                    <div class="other-card">
+                        <i class="fas fa-vial"></i>
+                        <div>
+                            <h4>油液清洁度验证材料</h4>
+                            <p>调配 0-100μm 污染颗粒物，用于变速箱、驱动电机等液压系统及阀、泵、过滤零部件的抗污染可靠性验证，达到 ISO 4406 清洁度要求，可替代进口污染物模拟油液长期使用状态。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,19 +127,24 @@
             <h2 class="section-title" data-aos="fade-up">应用领域</h2>
             <div class="application-grid">
                 <div class="application-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/AI-agent.png" alt="汽车维修养护">
-                    <h3>汽车维修养护</h3>
-                    <p>基于深度学习AI Agent智能体专家诊断系统，对话式操作，可配合研发油液品质传感器等智能设备，为汽车提供精准的保养建议和预测性维护方案，有效降低维护成本，提升车辆性能。</p>
+                    <img src="images/app-datacenter.svg" alt="液冷数据中心">
+                    <h3>液冷数据中心</h3>
+                    <p>冷板与浸没式液冷规模化部署后，实时监控冷却液电导率、pH、铜离子和清洁度等指标，预防铜腐蚀、结垢和微粒堵塞引发的局部过热宕机，保障 SLA 与算力连续性。</p>
                 </div>
                 <div class="application-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/motor-sensor.png" alt="车辆驱动系统">
-                    <h3>车辆驱动系统</h3>
-                    <p>可以用于乘用车，商用车，工程车辆和农机等驱动系统润滑油品质在线监测，和流体清洁度验证，特别适合混合动力发动机，油冷电机等润滑系统使用。</p>
+                    <img src="images/app-ev-storage.svg" alt="电动汽车和储能">
+                    <h3>电动汽车和储能</h3>
+                    <p>动力电池冷却液电导率要求低于 5μS/cm，超标即可能引发电气短路；大型储能电站冷却液监测几乎缺失，铜腐蚀与微生物污染可能诱发热失控连锁故障，需要在线预警。</p>
                 </div>
                 <div class="application-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="images/datacenter-icon.png" alt="液冷数据中心">
-                    <h3>液冷数据中心，储能</h3>
-                    <p>通过实时监控冷却工质电导率，ph值等指标，降低运维难度，保障设备及数据安全。</p>
+                    <img src="images/app-humanoid-robot.svg" alt="人形机器人">
+                    <h3>人形机器人</h3>
+                    <p>人形机器人高频运动的液冷管路与密封件易老化，产生的铁锈颗粒污染会降低流量、影响散热，导致伺服电机过热停机，需要微型化在线监测保障关节与驱动系统可靠运行。</p>
+                </div>
+                <div class="application-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/app-charging-pile.svg" alt="液冷充电桩">
+                    <h3>液冷充电桩</h3>
+                    <p>大功率液冷超充枪线依赖冷却液维持散热与电气安全，实时监测电导率、温度与清洁度，可预防冷却液劣化导致的过热降功率与安全风险，保障快充体验与设备寿命。</p>
                 </div>
             </div>
         </div>
@@ -117,10 +159,10 @@
                     <img src="images/office.png" alt="公司办公环境">
                 </div>
                 <div class="about-text" data-aos="fade-left">
-                    <p>比兑智能科技（上海）有限公司致力于为设备提供智能化经济的流体监控解决方案，通过AI技术赋能汽车维保领域及设备运维需求，实现设备的智能化管理与预测性维护。</p>
+                    <p>比兑智能科技（上海）有限公司致力于为设备提供智能化的流体监控解决方案。我们以便携检测、MEMS 在线传感、数字孪生与 AI 预测为核心，聚焦液冷数据中心冷却液健康监测，并将多年油液监测与可靠性验证的技术积累延伸至新能源汽车、储能与工业设备等领域。</p>
                     <div class="vision">
                         <h3>未来展望</h3>
-                        <p>AI Agent等创新科技引领行业发展，打造智能化的工业流体监控生态系统，为客户创造更大的价值。</p>
+                        <p>用硬件切入、用平台和服务沉淀长期价值，把冷却液从"被动耗材"升级为"可监测、可预测、可服务"的关键基础设施资产，为客户创造更大的价值。</p>
                     </div>
                 </div>
             </div>
@@ -211,7 +253,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 比对科技. 保留所有权利.</p>
+                <p>&copy; 2025 比兑智能科技（上海）有限公司， 保留所有权利.</p>
             </div>
         </div>
     </footer>
@@ -242,50 +284,73 @@
                     contact: '联系我们'
                 },
                 hero: {
-                    title: '随时把控，尽显专业',
-                    subtitle: '汽车养护的AI智能体，流体品质在线监控专家',
+                    eyebrow: '液冷冷却液健康监测',
+                    title: '读懂每一滴冷却液',
+                    subtitle: '液冷数据中心冷却液健康监测专家 —— 从感知，到预测，到守护',
                     learnMore: '了解更多',
-                    contactUs: '联系我们'
+                    contactUs: '联系我们',
+                    pills: ['MEMS 多参数在线监测', 'AI 数字孪生预测', '提前 7-30 天预警']
                 },
                 products: {
                     title: '产品服务',
                     card1: {
-                        title: '汽车养护智能体',
-                        desc: '汽车故障诊断和养护AI智能专家，识别汽车VIN码给出品牌汽车配置，通过故障招聘或描述，可配合内窥镜，油品品质在线传感器，和OBD故障码数据解读，识别故障原因，反馈维修建议，同时也可以给出车主汽车使用养护建议。',
+                        title: '便携式冷却液检测仪',
+                        desc: '面向现场的手持检测设备，15分钟完成 pH、电导率/电阻率、浊度、铜离子和 ISO 4406 清洁度等全参数检测，自动生成冷却液健康评分与异常原因建议，为交付验收、巡检和应急抢修建立统一的现场检测标准与数据入口。',
                         learnMore: '了解更多'
                     },
                     card2: {
-                        title: '流体品质在线监控',
-                        desc: '专利开发的油品品质在线监控传感器，可以加装汽车后市场，也可以用于汽车发动机，变速箱，油冷电机润滑油，和充电桩，储能，液冷数据中心冷却流体工质特性指标在线监控，确保设备运行安全。',
+                        title: 'MEMS 在线传感器',
+                        desc: '微型化、低功耗、可阵列化的 MEMS 多参数传感器，可嵌入 CDU、支路、冷板前后等关键节点，融合电导率/电阻率、pH、温度、浊度等指标。点位密度带来数据质量，数据质量带来预测能力，让冷却液监测成为系统的"神经末梢"。',
                         learnMore: '了解更多'
                     },
                     card3: {
-                        title: '油液清洁度验证材料',
-                        desc: '调配0-100um污染颗粒物，用于变速箱，驱动电机等液压系统及零部件抗污染耐久可靠性验证测试，添加到油液中，达到ISO 4406 清洁度要求，可以替代 FTI SYnform污染物，模拟油液长期使用后被污染情况。',
+                        title: '数字孪生与 AI 预测平台',
+                        desc: '实时采集多源监测数据，构建冷却液系统数字孪生模型，通过 AI 趋势与异常识别提前 7-30 天预警指标越界、定位污染来源，并自动输出过滤、冲洗、补液、换液等预防性维护工单，把"事后维修"升级为"事前预测"。',
                         learnMore: '了解更多'
+                    },
+                    card4: {
+                        title: '运维应急小车',
+                        desc: '面向数据中心高可用场景的现场液冷急救解决方案，集成泄漏收集与废液封存、不停机过滤/净化/补液、便携检测与 AI 辅助决策、远程专家连线于一体，配合年度维保包与按次应急服务，补齐预警到抢修之间的响应空白。',
+                        learnMore: '了解更多'
+                    }
+                },
+                others: {
+                    title: '其他业务',
+                    subtitle: '基于油液监测与可靠性验证的技术积累，我们同时提供以下能力',
+                    item1: {
+                        title: '汽车故障诊断及养护 AI 专家系统',
+                        desc: '识别汽车 VIN 码给出品牌配置，结合故障图片识别、内窥镜、OBD 故障码与油品在线监测数据，定位故障原因，提供专业维修与定制养护建议。'
+                    },
+                    item2: {
+                        title: '油液清洁度验证材料',
+                        desc: '调配 0-100μm 污染颗粒物，用于变速箱、驱动电机等液压系统及阀、泵、过滤零部件的抗污染可靠性验证，达到 ISO 4406 清洁度要求，可替代进口污染物模拟油液长期使用状态。'
                     }
                 },
                 applications: {
                     title: '应用领域',
                     card1: {
-                        title: '汽车维修养护',
-                        desc: '基于深度学习AI Agent智能体专家诊断系统，对话式操作，可配合研发油液品质传感器等智能设备，为汽车提供精准的保养建议和预测性维护方案，有效降低维护成本，提升车辆性能。'
+                        title: '液冷数据中心',
+                        desc: '冷板与浸没式液冷规模化部署后，实时监控冷却液电导率、pH、铜离子和清洁度等指标，预防铜腐蚀、结垢和微粒堵塞引发的局部过热宕机，保障 SLA 与算力连续性。'
                     },
                     card2: {
-                        title: '车辆驱动系统',
-                        desc: '可以用于乘用车，商用车，工程车辆和农机等驱动系统润滑油品质在线监测，和流体清洁度验证，特别适合混合动力发动机，油冷电机等润滑系统使用。'
+                        title: '电动汽车和储能',
+                        desc: '动力电池冷却液电导率要求低于 5μS/cm，超标即可能引发电气短路；大型储能电站冷却液监测几乎缺失，铜腐蚀与微生物污染可能诱发热失控连锁故障，需要在线预警。'
                     },
                     card3: {
-                        title: '液冷数据中心，储能',
-                        desc: '通过实时监控冷却工质电导率，ph值等指标，降低运维难度，保障设备及数据安全。'
+                        title: '人形机器人',
+                        desc: '人形机器人高频运动的液冷管路与密封件易老化，产生的铁锈颗粒污染会降低流量、影响散热，导致伺服电机过热停机，需要微型化在线监测保障关节与驱动系统可靠运行。'
+                    },
+                    card4: {
+                        title: '液冷充电桩',
+                        desc: '大功率液冷超充枪线依赖冷却液维持散热与电气安全，实时监测电导率、温度与清洁度，可预防冷却液劣化导致的过热降功率与安全风险，保障快充体验与设备寿命。'
                     }
                 },
                 about: {
                     title: '公司介绍',
-                    desc: '比兑智能科技（上海）有限公司致力于为设备提供智能化经济的流体监控解决方案，通过AI技术赋能汽车维保领域及设备运维需求，实现设备的智能化管理与预测性维护。',
+                    desc: '比兑智能科技（上海）有限公司致力于为设备提供智能化的流体监控解决方案。我们以便携检测、MEMS 在线传感、数字孪生与 AI 预测为核心，聚焦液冷数据中心冷却液健康监测，并将多年油液监测与可靠性验证的技术积累延伸至新能源汽车、储能与工业设备等领域。',
                     vision: {
                         title: '未来展望',
-                        desc: 'AI Agent等创新科技引领行业发展，打造智能化的工业流体监控生态系统，为客户创造更大的价值。'
+                        desc: '用硬件切入、用平台和服务沉淀长期价值，把冷却液从"被动耗材"升级为"可监测、可预测、可服务"的关键基础设施资产，为客户创造更大的价值。'
                     }
                 },
                 contact: {
@@ -308,7 +373,7 @@
                     company: '比兑智能科技（上海）有限公司',
                     quickLinks: '快速链接',
                     contactInfo: '联系方式',
-                    copyright: '© 2024 比对科技. 保留所有权利.',
+                    copyright: '© 2025 比兑智能科技（上海）有限公司. 保留所有权利.',
                     address: '上海市浦东新区拱秀路1026弄',
                     quickLinksItems: {
                         home: '首页',
@@ -327,50 +392,73 @@
                     contact: 'Contact'
                 },
                 hero: {
-                    title: 'Professional Control, Anytime',
-                    subtitle: 'AI Agent for Vehicle Maintenance, Expert in Fluid Quality Monitoring',
+                    eyebrow: 'Coolant Health Monitoring',
+                    title: 'Read Every Drop of Coolant',
+                    subtitle: 'Coolant Health Monitoring Experts for Liquid-Cooled Data Centers — from Sensing, to Prediction, to Protection',
                     learnMore: 'Learn More',
-                    contactUs: 'Contact Us'
+                    contactUs: 'Contact Us',
+                    pills: ['MEMS Multi-Parameter Monitoring', 'AI Digital-Twin Prediction', '7–30 Day Early Warning']
                 },
                 products: {
                     title: 'Products & Services',
                     card1: {
-                        title: 'Vehicle Maintenance AI Agent',
-                        desc: 'AI expert system for vehicle diagnostics and maintenance, featuring VIN code recognition, fault diagnosis through descriptions, endoscope integration, oil quality sensors, and OBD code interpretation. Provides maintenance advice and vehicle care recommendations.',
+                        title: 'Portable Coolant Analyzer',
+                        desc: 'A handheld field device that measures pH, conductivity/resistivity, turbidity, copper ions and ISO 4406 cleanliness in 15 minutes, automatically generating a coolant health score and root-cause advice. It establishes a unified on-site testing standard and data entry point for acceptance, inspection and emergency response.',
                         learnMore: 'Learn More'
                     },
                     card2: {
-                        title: 'Fluid Quality Monitoring',
-                        desc: 'Patented oil quality monitoring sensors for automotive aftermarket, engines, transmissions, oil-cooled motors, charging stations, energy storage, and liquid-cooled data centers. Ensures equipment safety through real-time monitoring.',
+                        title: 'MEMS Online Sensor',
+                        desc: 'Miniaturized, low-power, array-ready MEMS multi-parameter sensors that embed into CDUs, branch lines and cold-plate inlets/outlets, fusing conductivity/resistivity, pH, temperature and turbidity. More monitoring points mean better data, and better data means predictive power — turning coolant monitoring into the system’s nerve endings.',
                         learnMore: 'Learn More'
                     },
                     card3: {
-                        title: 'Oil Cleanliness Verification',
-                        desc: 'Custom 0-100um contamination particles for durability testing of transmission and drive motor hydraulic systems. Meets ISO 4406 cleanliness standards, simulating long-term oil contamination conditions.',
+                        title: 'Digital Twin & AI Prediction Platform',
+                        desc: 'Collects multi-source monitoring data in real time, builds a digital twin of the coolant system, and uses AI trend and anomaly detection to warn 7-30 days ahead of threshold breaches, locate contamination sources, and auto-generate preventive maintenance work orders — shifting from reactive repair to proactive prediction.',
                         learnMore: 'Learn More'
+                    },
+                    card4: {
+                        title: 'Mobile Emergency Response Cart',
+                        desc: 'An on-site liquid-cooling rescue solution for high-availability data centers, integrating leak collection and waste sealing, non-stop filtration/purification/replenishment, portable testing with AI-assisted decisions, and remote expert support — backed by annual maintenance packages and on-demand emergency service to close the gap between alert and repair.',
+                        learnMore: 'Learn More'
+                    }
+                },
+                others: {
+                    title: 'Other Business',
+                    subtitle: 'Built on our expertise in oil monitoring and reliability testing, we also offer:',
+                    item1: {
+                        title: 'AI Expert System for Vehicle Fault Diagnosis & Maintenance',
+                        desc: 'Recognizes VIN codes and vehicle configuration, and combines fault-image recognition, endoscopy, OBD codes and online oil-quality data to pinpoint faults and provide professional repair and tailored maintenance advice.'
+                    },
+                    item2: {
+                        title: 'Oil Cleanliness Verification Materials',
+                        desc: 'Custom 0-100μm contamination particles for anti-contamination reliability testing of transmissions, drive-motor hydraulic systems, valves, pumps and filters. Meets ISO 4406 cleanliness standards and replaces imported contaminants to simulate long-term oil conditions.'
                     }
                 },
                 applications: {
                     title: 'Applications',
                     card1: {
-                        title: 'Vehicle Maintenance',
-                        desc: 'Deep learning AI Agent expert system with conversational interface, integrated with oil quality sensors for precise maintenance recommendations and predictive maintenance solutions.'
+                        title: 'Liquid-Cooled Data Centers',
+                        desc: 'As cold-plate and immersion cooling scale up, real-time monitoring of conductivity, pH, copper ions and cleanliness prevents downtime from copper corrosion, scaling and particle blockage, safeguarding SLA and compute continuity.'
                     },
                     card2: {
-                        title: 'Vehicle Drive Systems',
-                        desc: 'Online oil quality monitoring and fluid cleanliness verification for passenger, commercial, engineering vehicles and agricultural machinery, especially suited for hybrid engines and oil-cooled motors.'
+                        title: 'EVs & Energy Storage',
+                        desc: 'EV battery coolant must stay below 5μS/cm or risk electrical short circuits; large energy-storage stations largely lack coolant monitoring, where copper corrosion and microbial contamination can trigger thermal-runaway cascades — both need online early warning.'
                     },
                     card3: {
-                        title: 'Liquid-Cooled Data Centers & Energy Storage',
-                        desc: 'Real-time monitoring of coolant conductivity and pH levels, reducing maintenance complexity while ensuring equipment and data security.'
+                        title: 'Humanoid Robots',
+                        desc: 'High-frequency robot cooling lines and seals age and shed rust particles that reduce flow and heat dissipation, causing servo motors to overheat and stall — miniaturized online monitoring keeps joints and drive systems reliable.'
+                    },
+                    card4: {
+                        title: 'Liquid-Cooled Charging Stations',
+                        desc: 'High-power liquid-cooled charging cables rely on coolant for heat dissipation and electrical safety. Real-time monitoring of conductivity, temperature and cleanliness prevents overheating, power derating and safety risks from coolant degradation.'
                     }
                 },
                 about: {
                     title: 'About Us',
-                    desc: 'Bidui Intelligent Technology (Shanghai) Co., Ltd. is committed to providing intelligent and economical fluid monitoring solutions, empowering automotive maintenance and equipment operation through AI technology.',
+                    desc: 'Bidui Intelligent Technology (Shanghai) Co., Ltd. is committed to intelligent fluid monitoring solutions. Centered on portable testing, MEMS online sensing, and digital-twin AI prediction, we focus on coolant health monitoring for liquid-cooled data centers, extending years of oil-monitoring and reliability-testing expertise to EVs, energy storage and industrial equipment.',
                     vision: {
                         title: 'Future Vision',
-                        desc: 'Leading industry development with AI Agent and innovative technologies, building an intelligent industrial fluid monitoring ecosystem to create greater value for customers.'
+                        desc: 'Entering through hardware while accumulating long-term value via platform and services, we aim to upgrade coolant from a "passive consumable" into a monitorable, predictable and serviceable critical infrastructure asset — creating greater value for our customers.'
                     }
                 },
                 contact: {
@@ -394,7 +482,7 @@
                     quickLinks: 'Quick Links',
                     contactInfo: 'Contact Information',
                     copyright: '© 2024 Bidui Technology. All Rights Reserved.',
-                    address: 'Lane 1026, Gongxiu Road, Pudong New Area, Shanghai',
+                    address: 'Lane No.1026, GoXiong Road, Pudong District, Shanghai City, China',
                     quickLinksItems: {
                         home: 'Home',
                         products: 'Products',
@@ -429,21 +517,39 @@
             });
             
             // 更新hero区域
+            document.querySelector('.hero-eyebrow').textContent = content.hero.eyebrow;
             document.querySelector('.hero-text h1').textContent = content.hero.title;
             document.querySelector('.hero-text p').textContent = content.hero.subtitle;
             document.querySelector('.hero-buttons .btn-primary').textContent = content.hero.learnMore;
             document.querySelector('.hero-buttons .btn-outline').textContent = content.hero.contactUs;
+            document.querySelectorAll('.hero-pills .pill-text').forEach((el, i) => {
+                if (content.hero.pills && content.hero.pills[i]) el.textContent = content.hero.pills[i];
+            });
             
             // 更新产品服务区域
             document.querySelector('#products .section-title').textContent = content.products.title;
             const productCards = document.querySelectorAll('.product-card');
             productCards.forEach((card, index) => {
                 const cardContent = content.products[`card${index + 1}`];
+                if (!cardContent) return;
                 card.querySelector('h3').textContent = cardContent.title;
                 card.querySelector('p').textContent = cardContent.desc;
                 card.querySelector('.learn-more').childNodes[0].textContent = cardContent.learnMore + ' ';
             });
-            
+
+            // 更新其他业务子栏目
+            if (content.others) {
+                document.querySelector('.other-business .other-title').textContent = content.others.title;
+                document.querySelector('.other-business .other-subtitle').textContent = content.others.subtitle;
+                const otherCards = document.querySelectorAll('.other-card');
+                otherCards.forEach((card, index) => {
+                    const item = content.others[`item${index + 1}`];
+                    if (!item) return;
+                    card.querySelector('h4').textContent = item.title;
+                    card.querySelector('p').textContent = item.desc;
+                });
+            }
+
             // 更新应用领域
             document.querySelector('#applications .section-title').textContent = content.applications.title;
             const applicationCards = document.querySelectorAll('.application-card');
@@ -466,9 +572,10 @@
             document.querySelectorAll('.info-card h3')[2].textContent = content.contact.address;
             
             // 更新表单
+            // 更新表单
             document.querySelectorAll('.form-group input, .form-group textarea').forEach((input, index) => {
-                const formKeys = Object.keys(content.contact.form);
-                input.placeholder = content.contact.form[formKeys[index]];
+            const formKeys = Object.keys(content.contact.form);
+            input.placeholder = content.contact.form[formKeys[index]];
             });
             document.querySelector('.contact-form .btn-primary').textContent = content.contact.form.submit;
             
@@ -521,14 +628,14 @@
             partnerLogos.forEach(logo => {
                 const img = document.createElement('img');
                 img.src = logo;
-                img.alt = '合作伙伴';
+                img.alt = 'our customers';
                 logoContainer.appendChild(img);
             });
             // 复制一组用于无缝滚动
             partnerLogos.forEach(logo => {
                 const img = document.createElement('img');
                 img.src = logo;
-                img.alt = '合作伙伴';
+                img.alt = 'our customers';
                 logoContainer.appendChild(img);
             });
         }
@@ -536,4 +643,4 @@
         createLogos();
     </script>
 </body>
-</html> 
+</html>

@@ -1,18 +1,24 @@
 /* 全局样式变量 */
 :root {
-    --primary-color: #2ecc71;
-    --primary-light: #a8e6cf;
-    --secondary-color: #34495e;
-    --accent-color: #3498db;
-    --text-color: #2c3e50;
-    --text-light: #7f8c8d;
-    --background-color: #ffffff;
-    --background-light: #f9f9f9;
-    --success-color: #27ae60;
-    --warning-color: #f1c40f;
-    --error-color: #e74c3c;
-    --border-radius: 8px;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --primary-color: #c6f24e;        /* 电光绿（品牌强调色） */
+    --primary-dark: #aadb38;
+    --primary-light: rgba(198, 242, 78, 0.16);
+    --secondary-color: #f2f6f4;      /* 浅色标题文字 */
+    --accent-color: #8be04d;         /* 渐变用绿色 */
+    --accent-teal: #5ec6e8;          /* 冷色"液体"点缀 */
+    --text-color: #dfe6e2;
+    --text-light: #93a39c;
+    --background-color: #0b100f;     /* 主背景近黑 */
+    --background-light: #111816;     /* 次级深色背景 */
+    --card-bg: #151c19;              /* 卡片底色 */
+    --card-border: #243029;          /* 卡片描边 */
+    --footer-bg: #070b0a;
+    --success-color: #c6f24e;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+    --border-radius: 12px;
+    --box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    --box-shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.6);
     --transition: all 0.3s ease;
 }
 
@@ -26,6 +32,7 @@
 body {
     font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     color: var(--text-color);
+    background: var(--background-color);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -41,6 +48,23 @@ body {
     padding: 6rem 0;
 }
 
+/* 版块底色交替，增强层次 */
+.products {
+    background: var(--background-color);
+}
+
+.applications {
+    background: var(--background-light);
+}
+
+.about {
+    background: var(--background-color);
+}
+
+.partners {
+    background: var(--background-light);
+}
+
 .section-title {
     font-size: 2.5rem;
     text-align: center;
@@ -52,9 +76,9 @@ body {
 .section-title::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 64px;
     height: 4px;
-    background: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     margin: 1rem auto;
     border-radius: 2px;
 }
@@ -65,13 +89,19 @@ body {
     top: 1rem;
     right: 2rem;
     z-index: 1001;
-    background: var(--background-color);
+    background: rgba(21, 28, 25, 0.9);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(8px);
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.language-switch button {
+    color: var(--text-color);
 }
 
 .language-switch button {
@@ -92,8 +122,9 @@ body {
 .main-nav {
     position: fixed;
     width: 100%;
-    background: var(--background-color);
-    box-shadow: var(--box-shadow);
+    background: rgba(11, 16, 15, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     z-index: 1000;
     padding: 1rem 0;
     transition: var(--transition);
@@ -165,7 +196,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, rgba(6, 10, 9, 0.94) 0%, rgba(9, 18, 15, 0.82) 45%, rgba(17, 38, 28, 0.62) 100%);
     z-index: 1;
 }
 
@@ -187,8 +218,76 @@ body {
 }
 
 .hero-text {
-    max-width: 800px;
+    max-width: 820px;
     margin: 0 auto;
+}
+
+.hero-eyebrow {
+    display: inline-block;
+    padding: 0.4rem 1.1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    color: #eafdc9;
+    background: rgba(198, 242, 78, 0.14);
+    border: 1px solid rgba(198, 242, 78, 0.45);
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+}
+
+.hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+}
+
+.hero-pills .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
+}
+
+.hero-pills .pill i {
+    color: var(--accent-color);
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    text-decoration: none;
+    animation: heroBounce 2s infinite;
+    transition: var(--transition);
+}
+
+.hero-scroll:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+@keyframes heroBounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
 }
 
 .hero-text h1 {
@@ -208,6 +307,7 @@ body {
 .hero-buttons {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .btn {
@@ -223,24 +323,29 @@ body {
 
 .btn-primary {
     background: var(--primary-color);
-    color: white;
+    color: #0b100f;
     border: none;
+    font-weight: 600;
+    box-shadow: 0 8px 22px rgba(198, 242, 78, 0.25);
 }
 
 .btn-primary:hover {
-    background: var(--success-color);
+    background: var(--primary-dark);
     transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(198, 242, 78, 0.4);
 }
 
 .btn-outline {
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: white;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(4px);
 }
 
 .btn-outline:hover {
-    background: var(--primary-color);
-    color: white;
+    background: var(--card-bg);
+    color: var(--secondary-color);
+    border-color: white;
     transform: translateY(-2px);
 }
 
@@ -254,30 +359,52 @@ body {
 /* 产品服务区域样式 */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
 .product-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--card-border);
     transition: var(--transition);
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    z-index: 2;
 }
 
 .product-card:hover {
     transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.product-card:hover::before {
+    transform: scaleX(1);
 }
 
 .product-image {
     width: 100%;
-    height: 250px;
+    height: 240px;
     object-fit: cover;
+    background: var(--background-light);
 }
 
 .product-content {
@@ -314,6 +441,69 @@ body {
 .learn-more:hover {
     gap: 0.75rem;
     color: var(--secondary-color);
+}
+
+/* 其他业务子栏目样式 */
+.other-business {
+    margin-top: 4rem;
+}
+
+.other-business .other-title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.other-business .other-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.other-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.other-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.other-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.other-card i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.other-card h4 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.other-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* 公司介绍区域样式 */
@@ -359,10 +549,11 @@ body {
 }
 
 .application-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--card-border);
     transition: var(--transition);
     height: 100%;
     display: flex;
@@ -371,12 +562,14 @@ body {
 
 .application-card:hover {
     transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
 }
 
 .application-card img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
+    background: var(--background-light);
 }
 
 .application-card h3 {
@@ -483,7 +676,7 @@ body {
 }
 
 .info-card {
-    background: white;
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -514,7 +707,7 @@ body {
 
 /* 表单样式 */
 .contact-form {
-    background: white;
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -534,9 +727,16 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--card-border);
     border-radius: var(--border-radius);
+    background: #0e1413;
+    color: var(--text-color);
     transition: var(--transition);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-light);
 }
 
 .form-group input:focus,
@@ -550,23 +750,25 @@ body {
     width: 100%;
     padding: 1rem;
     background: var(--primary-color);
-    color: white;
+    color: #0b100f;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-    background: var(--secondary-color);
+    background: var(--primary-dark);
 }
 
 /* 页脚样式 */
 .footer {
-    background: var(--secondary-color);
+    background: var(--footer-bg);
     color: white;
     padding: 4rem 0 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .footer-content {
@@ -589,7 +791,7 @@ body {
 
 .footer-column h4 {
     margin-bottom: 1.5rem;
-    color: var(--primary-light);
+    color: var(--primary-color);
 }
 
 .footer-column ul {

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="人形机器人">
+  <defs>
+    <linearGradient id="arb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1211"/><stop offset="0.55" stop-color="#13201a"/><stop offset="1" stop-color="#1b2c22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#arb)"/>
+  <circle cx="400" cy="260" r="195" fill="#ffffff" opacity="0.06"/>
+  <!-- antenna -->
+  <line x1="400" y1="118" x2="400" y2="150" stroke="#5ec6e8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="400" cy="110" r="9" fill="#c6f24e"/>
+  <!-- head -->
+  <rect x="338" y="150" width="124" height="92" rx="22" fill="#eaf6ff"/>
+  <circle cx="372" cy="196" r="12" fill="#16324f"/><circle cx="428" cy="196" r="12" fill="#16324f"/>
+  <circle cx="372" cy="196" r="4" fill="#5ec6e8"/><circle cx="428" cy="196" r="4" fill="#5ec6e8"/>
+  <!-- neck -->
+  <rect x="384" y="242" width="32" height="20" fill="#9fb6c6"/>
+  <!-- torso -->
+  <rect x="318" y="262" width="164" height="150" rx="22" fill="#eaf6ff"/>
+  <circle cx="400" cy="320" r="20" fill="#c6f24e"/>
+  <rect x="360" y="356" width="80" height="10" rx="5" fill="#9fb6c6"/>
+  <!-- arms -->
+  <rect x="270" y="270" width="34" height="130" rx="17" fill="#eaf6ff"/>
+  <rect x="496" y="270" width="34" height="130" rx="17" fill="#eaf6ff"/>
+  <!-- legs -->
+  <rect x="346" y="412" width="36" height="40" rx="10" fill="#9fb6c6"/>
+  <rect x="418" y="412" width="36" height="40" rx="10" fill="#9fb6c6"/>
+</svg>

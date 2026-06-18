@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="便携式冷却液检测仪">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1211"/>
+      <stop offset="0.55" stop-color="#13201a"/>
+      <stop offset="1" stop-color="#1b2c22"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c2233"/>
+      <stop offset="1" stop-color="#143b56"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg)"/>
+  <g fill="#ffffff" opacity="0.05">
+    <circle cx="120" cy="100" r="3"/><circle cx="170" cy="100" r="3"/><circle cx="220" cy="100" r="3"/>
+    <circle cx="120" cy="150" r="3"/><circle cx="170" cy="150" r="3"/><circle cx="220" cy="150" r="3"/>
+    <circle cx="640" cy="400" r="3"/><circle cx="690" cy="400" r="3"/><circle cx="640" cy="450" r="3"/><circle cx="690" cy="450" r="3"/>
+  </g>
+  <circle cx="400" cy="260" r="185" fill="#ffffff" opacity="0.06"/>
+  <!-- device body -->
+  <rect x="318" y="120" width="164" height="290" rx="26" fill="#eaf6ff"/>
+  <rect x="318" y="120" width="164" height="290" rx="26" fill="none" stroke="#c6f24e" stroke-width="4" opacity="0.6"/>
+  <!-- screen -->
+  <rect x="342" y="150" width="116" height="120" rx="10" fill="url(#screen)"/>
+  <!-- waveform -->
+  <polyline points="352,230 372,230 384,196 400,250 414,214 430,234 448,234" fill="none" stroke="#c6f24e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- droplet readout -->
+  <path d="M400 168 c14 18 22 28 22 40 a22 22 0 0 1 -44 0 c0 -12 8 -22 22 -40 z" fill="#5ec6e8"/>
+  <!-- controls -->
+  <circle cx="400" cy="318" r="22" fill="none" stroke="#16324f" stroke-width="6"/>
+  <circle cx="400" cy="318" r="7" fill="#c6f24e"/>
+  <rect x="356" y="366" width="36" height="12" rx="6" fill="#9fb6c6"/>
+  <rect x="408" y="366" width="36" height="12" rx="6" fill="#9fb6c6"/>
+</svg>
