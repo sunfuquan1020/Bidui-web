@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="汽车故障诊断及养护 AI 专家系统">
+  <defs>
+    <linearGradient id="oad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1211"/><stop offset="0.55" stop-color="#13201a"/><stop offset="1" stop-color="#1b2c22"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#oad)"/>
+  <circle cx="200" cy="185" r="120" fill="#ffffff" opacity="0.06"/>
+  <!-- car -->
+  <path d="M96 232 q10 -46 50 -46 h64 q29 0 46 29 l36 6 q24 4 24 26 v13 q0 9 -10 9 H86 q-10 0 -10 -9 v-16 q0 -36 20 -39 z" fill="#eaf6ff"/>
+  <path d="M132 189 h69 l21 27 H122 z" fill="#5ec6e8"/>
+  <circle cx="139" cy="274" r="24" fill="#16324f"/><circle cx="139" cy="274" r="9" fill="#9fb6c6"/>
+  <circle cx="265" cy="274" r="24" fill="#16324f"/><circle cx="265" cy="274" r="9" fill="#9fb6c6"/>
+  <!-- AI scan pulse -->
+  <path d="M60 320 h40 l14 -34 22 62 18 -40 12 20 h92" fill="none" stroke="#c6f24e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
