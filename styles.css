@@ -797,6 +797,40 @@ body {
     box-shadow: 0 0 0 2px var(--primary-light);
 }
 
+/* 蜜罐字段：真人看不到，只给机器人 */
+.form-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.contact-form button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-status {
+    margin-top: 1rem;
+    min-height: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.form-status.is-sending {
+    color: var(--text-light);
+}
+
+.form-status.is-success {
+    color: var(--primary-color);
+}
+
+.form-status.is-error {
+    color: #ff8080;
+}
+
 .submit-btn {
     width: 100%;
     padding: 1rem;

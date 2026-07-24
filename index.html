@@ -214,12 +214,12 @@
                     <div class="info-card">
                         <i class="fas fa-phone"></i>
                         <h3>电话咨询</h3>
-                        <p>+86 135-2430-9462</p>
+                        <p>+86 136-1170-2865</p>
                     </div>
                     <div class="info-card">
                         <i class="fas fa-envelope"></i>
                         <h3>邮件咨询</h3>
-                        <p>infor@bidui-ite.com</p>
+                        <p>infor@bidui.com.cn</p>
                     </div>
                     <div class="info-card">
                         <i class="fas fa-map-marker-alt"></i>
@@ -227,20 +227,25 @@
                         <p>上海市浦东新区拱秀路1026弄</p>
                     </div>
                 </div>
-                <form class="contact-form" data-aos="fade-left">
+                <form class="contact-form" data-aos="fade-left" novalidate>
                     <div class="form-group">
-                        <input type="text" placeholder="您的姓名" required>
+                        <input type="text" name="name" placeholder="您的姓名" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="电子邮箱" required>
+                        <input type="email" name="email" placeholder="电子邮箱" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="联系电话" required>
+                        <input type="tel" name="phone" placeholder="联系电话" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="请输入您的留言" required></textarea>
+                        <textarea name="message" placeholder="请输入您的留言" required></textarea>
+                    </div>
+                    <!-- 蜜罐字段：真人看不到，机器人填了就丢弃 -->
+                    <div class="form-honeypot" aria-hidden="true">
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
                     </div>
                     <button type="submit" class="btn btn-primary">发送消息</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </div>
@@ -267,8 +272,8 @@
                     <div class="footer-column">
                         <h4>联系方式</h4>
                         <ul>
-                            <li><i class="fas fa-phone"></i> +86 135-2430-9462</li>
-                            <li><i class="fas fa-envelope"></i> infor@bidui-ite.com</li>
+                            <li><i class="fas fa-phone"></i> +86 136-1170-2865</li>
+                            <li><i class="fas fa-envelope"></i> infor@bidui.com.cn</li>
                             <li><i class="fas fa-map-marker-alt"></i> 上海市浦东新区拱秀路1026弄</li>
                         </ul>
                     </div>
@@ -283,6 +288,7 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="content.js"></script>
+    <script src="contact-form.js"></script>
     <script>
         // 初始化AOS动画库
         AOS.init({
@@ -416,13 +422,18 @@
             document.querySelectorAll('.info-card h3')[1].textContent = content.contact.email;
             document.querySelectorAll('.info-card h3')[2].textContent = content.contact.address;
             
-            // 更新表单
-            // 更新表单
-            document.querySelectorAll('.form-group input, .form-group textarea').forEach((input, index) => {
-            const formKeys = Object.keys(content.contact.form);
-            input.placeholder = content.contact.form[formKeys[index]];
+            // 更新表单（按字段名对应，避免依赖 DOM 顺序）
+            ['name', 'email', 'phone', 'message'].forEach(field => {
+                const input = document.querySelector(`.contact-form [name="${field}"]`);
+                if (input) input.placeholder = content.contact.form[field];
             });
             document.querySelector('.contact-form .btn-primary').textContent = content.contact.form.submit;
+            // 语言切换后清空上一次的发送状态提示
+            const formStatus = document.querySelector('.contact-form .form-status');
+            if (formStatus) {
+                formStatus.textContent = '';
+                formStatus.className = 'form-status';
+            }
             
             // 更新合作客户标题
             document.querySelector('.partners .section-title').textContent = content.partners.title;
@@ -445,9 +456,9 @@
             const contactItems = document.querySelectorAll('.footer-column:last-child ul li');
             contactItems.forEach(item => {
                 if (item.querySelector('i.fa-phone')) {
-                    item.childNodes[1].textContent = ' +86 135-2430-9462';
+                    item.childNodes[1].textContent = ' +86 136-1170-2865';
                 } else if (item.querySelector('i.fa-envelope')) {
-                    item.childNodes[1].textContent = ' infor@bidui-ite.com';
+                    item.childNodes[1].textContent = ' infor@bidui.com.cn';
                 } else if (item.querySelector('i.fa-map-marker-alt')) {
                     item.childNodes[1].textContent = ' ' + content.footer.address;
                 }

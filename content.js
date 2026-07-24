@@ -90,7 +90,11 @@ const translations = {
                 email: '电子邮箱',
                 phone: '联系电话',
                 message: '请输入您的留言',
-                submit: '发送消息'
+                submit: '发送消息',
+                sending: '发送中…',
+                success: '消息已发送，我们会尽快与您联系。',
+                error: '发送失败，请稍后重试，或直接邮件联系 infor@bidui.com.cn。',
+                mailtoHint: '正在为您打开邮件客户端，请点击发送完成留言。'
             }
         },
         partners: {
@@ -194,7 +198,11 @@ const translations = {
                 email: 'Email Address',
                 phone: 'Phone Number',
                 message: 'Your Message',
-                submit: 'Send Message'
+                submit: 'Send Message',
+                sending: 'Sending…',
+                success: 'Your message has been sent. We will get back to you shortly.',
+                error: 'Sending failed. Please try again later, or email us at infor@bidui.com.cn.',
+                mailtoHint: 'Opening your mail client — please press Send to deliver the message.'
             }
         },
         partners: {

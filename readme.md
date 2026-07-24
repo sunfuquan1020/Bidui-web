@@ -55,9 +55,12 @@ AI Agent等创新科技引领行业发展，打造智能化的工业流体监控
 1. 合作伙伴logo图片使用images中partners文件夹中，partner-1.png， partner-2.png等5个客户图片。
 
 ### 联系我们
-1. 电话咨询：+86 135-2430-9462
-2. 邮件咨询： infor@bidui.com 
+1. 电话咨询：+86 136-1170-2865
+2. 邮件咨询： infor@bidui.com.cn 
 3. 公司地址： 上海市浦东新区拱秀路1026弄
+4. 留言表单：访客填写姓名/邮箱/电话/留言并点击「发送消息」后，内容以邮件形式发送到 infor@bidui.com.cn。
+   - 实现文件：`contact-form.js`，上线前需在该文件顶部的 `CONTACT_FORM_ENDPOINT` 填入表单转发接口地址（推荐 Formspree，收件邮箱设为 infor@bidui.com.cn）。
+   - 该项留空时，表单会退化为打开访客本机邮件客户端并预填内容，需要访客手动点发送。
 
 
 # 2026/6/18 液冷数据中心（IDC）版改版
